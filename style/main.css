@@ -44,13 +44,16 @@ body section.game .player {
 
 body section.game .player .canvas {
   width: 100%;
-  height: 50vw;
-  background-color: rgba(0, 0, 0, 0.05);
+  height: 50vh;
+}
+
+body section.game .player .canvas .hand {
+  height: 100%;
 }
 
 body section.game .player .panel {
   width: 100%;
-  height: calc(100vh - 50vw);
+  height: 50vh;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -64,5 +67,11 @@ body section.game .player .panel .ready {
   color: #ffea00;
   font-size: 30px;
   font-weight: 800;
+}
+
+body section.game .player .panel .playerReady {
+  background-color: #ffea00;
+  color: #234099;
+  border: 2px solid #234099;
 }
 /*# sourceMappingURL=main.css.map */

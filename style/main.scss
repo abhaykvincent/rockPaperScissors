@@ -33,12 +33,14 @@ body{
                 height: 100vh;
                 .canvas{
                     width: 100%;
-                    height: 50vw;
-                    background-color: rgba(0, 0, 0, 0.05);
+                    height: 50vh;
+                    .hand{
+                        height: 100%;
+                    }
                 }
                 .panel{
                     width: 100%;
-                    height: calc(100vh - 50vw);
+                    height: 50vh;
                     background-color: rgba(0, 0, 0, 0.1);
                     .ready{
                         position: relative;
@@ -50,6 +52,11 @@ body{
                         color:#ffea00;
                         font-size: 30px;
                         font-weight: 800;
+                    }
+                    .playerReady{
+                        background-color: #ffea00 ;
+                        color:#234099;
+                        border: 2px solid #234099;
                     }
                 }
             }
