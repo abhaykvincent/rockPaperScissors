@@ -36,6 +36,17 @@ body section.game {
   display: flex;
 }
 
+body section.game .gameLog {
+  position: fixed;
+  top: 10px;
+  left: 50vw;
+  padding: 20px;
+  color: #ffea00;
+  background-color: #234099;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 body section.game .player {
   display: inline-block;
   width: 50vw;
@@ -54,13 +65,20 @@ body section.game .player .canvas .hand {
 body section.game .player .panel {
   width: 100%;
   height: 50vh;
-  background-color: rgba(0, 0, 0, 0.1);
+}
+
+body section.game .player .panel .score {
+  text-align: center;
+  font-size: 50px;
+  margin: 10px;
 }
 
 body section.game .player .panel .ready {
   position: relative;
   top: 50%;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: inline-block;
   padding: 10px 20px;
   background-color: #234099;
